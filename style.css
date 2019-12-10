@@ -51,10 +51,52 @@ flex-direction: row;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
-
-
+  /* Assignment 4 addition */
+  transition: all .2s ease-in-out;
 /* Flexbox END*/
   }
+/* Assignment 4 addition */
+  
+/* play/pause button overlay */
+.item:hover .playpause label {
+  display: block;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  cursor: pointer;
+  border-color: transparent transparent transparent #657786;;
+  transition: 100ms all ease;
+  will-change: border-width;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;   
+}
+.playpause input[type='checkbox'] {
+  visibility: hidden;
+}
+.item:hover input[type='checkbox']:checked + label {
+    border-style: double;
+    border-color: #1DA1F2;
+    border-width: 0px 0 0px 60px;
+}
+.item:hover .playpause {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.8;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.item:hover  {
+    transform: scale(1.05);
+    background-color: #E1E8ED;
+    font-size: 2rem;
+  }
+
+   
+  
   .upper-right {
     margin: 0 0 3% 85%;
     width: 50px;
@@ -136,8 +178,8 @@ button:hover {
   flex-grow: 1;
   min-height: 400px;
   background: var(--main-blue-color)
-	/*Photo by Tyler Lastovich from Pexels*/
-    url("img/apple-cup-desk-7974-2.jpg") no-repeat
+	/*Photo from BBC News*/
+    url("img/trumpmouth.png") no-repeat
     center / cover;
   background-blend-mode: luminosity;
   color: var(--main-white-color);
@@ -155,12 +197,13 @@ button:hover {
   margin-top: 10px;
 }
 
+
 /* form start */
 .page-main-form {
 	min-height: 200px;
 	background: var(--main-blue-color)
-	  /*Photo by Tyler Lastovich from Pexels*/
-	  url("img/apple-cup-desk-7974-2.jpg") no-repeat
+	  /*Photo from BBC News - Photoshopped by Eddie Rath*/
+	  url("img/trumpmouth_repeat.png") no-repeat
 	  center / cover;
 	background-blend-mode: luminosity;
 	color: var(--main-white-color);

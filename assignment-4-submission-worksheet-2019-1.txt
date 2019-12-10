@@ -1,0 +1,54 @@
+DGMD E-20 Assignment 4
+
+Your name:
+
+1. Provide a link to the first page of your website:
+
+My site looks the way I want on (choose one): Mac  PC
+
+With this browser (choose one): Firefox Chrome 
+
+
+TRANSITIONS & TRANSFORMS (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+2a. Instance #1 of transforms:
+
+2b. Instance #2 of transforms:
+
+3a. Instance #1 of transition, which is associated with a transform:
+
+3b. Instance #2 of transition:
+
+
+CSS ANIMATION (25% of grade)
+Provide URL(s) and starting line number(s) for HTML and CSS for each item. 
+
+For the animation with at least 4 keyframes:
+4. Keyframes start on this CSS line number:
+
+5a. First property that changes through the 4 keyframes:
+
+5b. Second property that changes through the 4 keyframes:
+
+6. This animation is activated on (choose one):  
+page load/hover/active state of link 
+
+SVG PLUS ANIMATION (25% of grade)
+
+7. Indicate where the SVG starts (separate file or starting HTML line number): 
+
+8. Attribution for SVG, or indicate that you created it yourself:
+
+9a. SVG animation keyframe location (starting CSS line number):
+
+9b. URL location of the SVG animation:
+
+
+CSS FILTERS (25% of grade) 
+Provide URL(s) and starting line number(s) for HTML and CSS for each item.
+
+10a. CSS filter #1, which was transitioned/animated:
+
+10b. CSS filter #2:
+
