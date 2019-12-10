@@ -1,0 +1,332 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* color variables for easier prototyping */
+:root {
+  --main-white-color: #f2f2f2;
+  --main-black-color: black;
+  --main-blue-color: rgb(72, 126, 197);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+	border: 2px solid maroon;
+	width: 70%;
+	padding: 6rem 4rem;
+	overflow: auto;
+	margin: 0 auto;
+}
+/* Index Flex CONTAINER */
+.container {
+  background-color: #f5f8fa;
+  /* Could not get flex-flow to behave this way */
+  display: flex;
+flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  }
+/* Flexbox for Twitter Card START*/
+  .item {
+  font-size: 1.2rem;
+  max-width: 350px;
+  margin: 20px 20px 20px 40px;
+	/* Twitter Font guideline */
+	font-family: "HelveticaNeue";
+	line-height: 1.2;
+	padding: 1rem;
+	background: white;
+  color: black;
+  /* flex items within the item box */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+
+
+/* Flexbox END*/
+  }
+  .upper-right {
+    margin: 0 0 3% 85%;
+    width: 50px;
+    height: 50px;
+  }
+  .upper-left {
+    font-size: 0.8rem;
+    margin: -12% 0 10% 0;
+    line-height: 0.7;
+    font-family: "HelveticaNeue-Light";
+  }
+button {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px/1.5 "Dosis", sans-serif;
+}
+
+
+
+
+/* Header */
+.page-header {
+  background: var(--main-white-color);
+  min-height: 100px;
+}
+.page-header nav {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+margin-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a:hover {
+	color: rgba(0, 140, 255, 0.603);
+}
+button:hover {
+	background-color: rgb(162, 209, 255);
+}
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.page-header ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.page-header .cta-contact {
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+
+/* main page */
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-height: 400px;
+  background: var(--main-blue-color)
+	/*Photo by Tyler Lastovich from Pexels*/
+    url("img/apple-cup-desk-7974-2.jpg") no-repeat
+    center / cover;
+  background-blend-mode: luminosity;
+  color: var(--main-white-color);
+}
+
+.page-main div {
+  max-width: 500px;
+}
+
+.page-main h1 {
+  margin-bottom: 20px;
+}
+
+.page-main p + p {
+  margin-top: 10px;
+}
+
+/* form start */
+.page-main-form {
+	min-height: 200px;
+	background: var(--main-blue-color)
+	  /*Photo by Tyler Lastovich from Pexels*/
+	  url("img/apple-cup-desk-7974-2.jpg") no-repeat
+	  center / cover;
+	background-blend-mode: luminosity;
+	color: var(--main-white-color);
+  }
+  .form-banner-text {
+	  padding: 60px;
+  }
+  .regular-image {
+	  max-width: 15%;
+	  min-width: 8%;
+	  float: right;
+	  padding: 20px;
+  }
+
+  /* Grid layout START */
+.formwrapper {
+	background-color: rgb(224, 224, 224);
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+  	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	justify-content: space-evenly;	
+}
+.grid-item-1 {
+	grid-column: 3;
+ 	grid-row: 1 / 5;
+	font-size: 1rem;
+	max-width: 400px;
+	margin: 20px 20px 20px 40px;
+	  /* Twitter Font guideline */
+	  font-family: "HelveticaNeue";
+	  line-height: 1.2;
+	  padding: 1rem;
+	  background: white;
+	color: black;
+	
+  
+	}
+	.grid-item-2 {
+		grid-column: 1;
+		grid-row: 1 / 2;
+	}
+	.grid-item-3 {
+		grid-column: 2;
+		grid-row:  1 / 2;
+	}
+	.grid-item-4 {
+		grid-column: 1;
+		grid-row: 2 / 3;
+
+	}
+	.grid-item-5 {
+	grid-column: 2;
+		grid-row: 2 / 4;
+				
+	}
+	.grid-item {
+		margin: 20px 0 20px 20px;
+		font-size: 1.2rem;
+		/* Twitter Font guideline */
+		font-family: "HelveticaNeue";
+		line-height: 1.2;
+		padding: 1rem;
+		background: white;
+		color: black;	
+	}
+.grid-item:hover {
+	border: solid 2px;
+}
+  /* Grid layout END */
+fieldset {
+	margin: 1rem;
+	border: none;
+	background-color:white;
+}
+legend {
+	padding-top: 2rem;
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	border-bottom: 2px solid black;
+
+}
+label {
+	display: block;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea {
+	display: block;
+	margin: 0.5em 1em;
+	width: 20rem;
+	font-size: 1em;
+}
+
+
+/* Footer */
+.page-footer {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--main-white-color);
+  padding: 5px;
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social-icon {
+	width: 32px;
+	height: 32px;
+}
+
+/* Media Screen resize */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .page-header .cta-contact {
+    order: 1;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-main {
+    padding-left: 90px;
+  }
+}
+
+.skip {
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	height: 10px;
+	width: 10px;
+	text-align: left;
+	overflow: hidden;
+}
+
+a.skip:active, a.skip:focus, a.skip:hover {
+	left: 0; 
+	top: 0;
+	color: black;
+	width: auto; 
+	height: auto; 
+	overflow: visible; 
+}

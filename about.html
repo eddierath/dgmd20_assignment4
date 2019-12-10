@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" media="screen" href="style.css">
+  <title>About</title>
+</head>
+  <body>
+      <header class="page-header">
+          <a href="#footer" class="skip">Skip to bottom of page</a>
+          <nav>
+            <h2 class="logo"><a href="index.html">🐦 Twitter Speaks 🗣️</a></h2>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+      
+            </ul>
+            <a href="form.html"><button class="cta-contact">Get Started</button></a>
+          </nav>
+        </header>
+    <div class="wrapper">
+    <h2>What is in a Tweet? And why listen?</h2>
+    <p>Here's what you might expect:</p>
+    <ul>
+      <li>Twitter Handle</li>
+      <li>Hashtags</li>
+      <li>Keywords</li>
+    </ul>
+    <p><strong>But there's more. A lot more.</strong> We can also listen for location, time and date, URLs, and titles of linked pages! <a href="https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets" target="_blank">Twitter shares its full breakdown of a Tweet</a> on its site.</p>
+    <pre><code>{
+      "created_at": "Thu May 10 17:41:57 +0000 2018",
+      "id_str": "994633657141813248",
+      "text": "Just another Extended Tweet with more than 140 characters, 
+              generated as a documentation example, showing that 
+              [\"tru… https://t.co/U7Se4NM7Eu",
+      "display_text_range": [0, 140],
+      "truncated": true,
+      "user": {
+        "id_str": "944480690",
+        "screen_name": "FloodSocial"
+      },
+      "extended_tweet": {
+        "full_text": "Just another Extended Tweet with more than 140 characters, 
+                      generated as a documentation example, showing that 
+                      [\"truncated\": true] and the presence of an 
+                      \"extended_tweet\" object with complete text and \"entities\"
+                       #documentation #parsingJSON #GeoTagged 
+                      https://t.co/e9yhQTJSIA",
+        "display_text_range": [0, 249],
+        "entities": {
+          "hashtags": [{
+            "text": "documentation",
+            "indices": [211, 225]
+          }, {
+            "text": "parsingJSON",
+            "indices": [226, 238]
+          }, {
+            "text": "GeoTagged",
+            "indices": [239, 249]
+          }]
+        }
+    
+      },
+      "urls": [
+          {
+            "url": "https:\/\/t.co\/XweGngmxlP",
+            "unwound": {
+              "url": "https:\/\/cards.twitter.com\/cards\/18ce53wgo4h\/3xo1c",
+              "title": "Building the Future of the Twitter API Platform"
+            }
+          }
+        ],
+      "entities": {
+        "hashtags": []
+      }
+    }</code></pre>
+
+
+  </div>
+  <footer id="footer" class="page-footer">
+      <small>© Copyright 2020. All rights reserved.</small>
+      <ul>
+          <a href="https://twitter.com/eddierath1" target="_blank">
+            <img class="social-icon" src="img/twitter.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/eddierath" target="_blank">
+            <img class="social-icon" src="img/linkedin.png">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/eddierath?tab=repositories" target="_blank">
+            <img class="social-icon" src="img/GitHub-Mark/png/GitHub-Mark-64px.png">
+          </a>
+        </li>
+      </ul>
+    </footer>
+</html>
