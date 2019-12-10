@@ -36,67 +36,168 @@
       <p>Need some inspiration? <a href="https://www.twitter.com" target="_blank">Go to Twitter</a> and sign in.</p>
       <form>
         <fieldset>
-          <legend>Listen to...?</legend>
-          <label for="handle">Twitter Handle</label>
-            <input type="text" id="handle" placeholder="do not include the @ symbol" autofocus>
-          <label for="hashtag">Hashtag</label>
-            <input type="text" id="hashtag" placeholder="do not include the # symbol">
-          <label for="keyword">Keyword(s)</label>
-          <input type="text" id="keyword" placeholder="words to listen for">
-        </fieldset>
-        <fieldset>
-          <legend>Extra Details</legend>
-          <label for="date">When to start listening. Default will be right now.</label>
-            <input type="date" id="date">
-          <label for="filter" class="extraspace">Apply a filter</label>
-            <input name="filter" list="filter">
-            <datalist id="filter">
-              <label>Or select from the list</label>
-              <select name="filling">
-                <option selected>Select one. Default will be Popular</option>
-                <option value="popular">Popular</option>
-                <option value="trending">Trending</option>
-                <option value="location">Location</option>
-                <option value="retweets">Retweets</option>
-              </select>
-            </datalist>
-            <label>
-              <input id="retweets" type="checkbox" value="retweets">Include retweets
-            </label>
-            <label>
-              <input id="location" type="checkbox" value="location">Include location
-            </label>
-            <label>
-              <input id="links" type="checkbox" value="retweets">Include links and URLs
-            </label>
-          <label class="extraspace">Include a customized message to be read out loud in between Tweets:
-            <textarea id="custommessage"></textarea>
-          </label>
-  
+          <legend>Words</legend>
+          <label for="allwords">All of these words</label>
+            <input type="text" id="allwords" autofocus>
+          <label for="phrase">This exact phrase</label>
+            <input type="text" id="phrase">
+          <label for="anywords">Any of these words</label>
+          <input type="text" id="anywords">
+          <label for="hashtags">These hashtags</label>
+          <input type="text" id="hashtags">
+          <label for="writtenin">Written in</label>
+          <select id="wriitenin" name="lang">
+              <option value="all" selected="selected">All languages</option>
+              <option disabled="disabled">---</option>
+                <option value="en">English (English)</option>
+                <option value="ja">Japanese (日本語)</option>
+                <option value="ar">Arabic (العربية)</option>
+                <option value="es">Spanish (español)</option>
+              <option disabled="disabled">---</option>
+                <option value="am">Amharic (አማርኛ)</option>
+                <option value="hy">Armenian (հայերեն)</option>
+                <option value="bn">Bangla (বাংলা)</option>
+                <option value="bg">Bulgarian (български)</option>
+                <option value="my">Burmese (မြန်မာ)</option>
+                <option value="ckb">Central Kurdish (کوردیی ناوەندی)</option>
+                <option value="zh">Chinese (中文)</option>
+                <option value="da">Danish (dansk)</option>
+                <option value="dv">Divehi (Divehi)</option>
+                <option value="nl">Dutch (Nederlands)</option>
+                <option value="et">Estonian (eesti)</option>
+                <option value="fi">Finnish (suomi)</option>
+                <option value="fr">French (français)</option>
+                <option value="ka">Georgian (ქართული)</option>
+                <option value="de">German (Deutsch)</option>
+                <option value="el">Greek (Ελληνικά)</option>
+                <option value="gu">Gujarati (ગુજરાતી)</option>
+                <option value="ht">Haitian Creole (Haitian Creole)</option>
+                <option value="he">Hebrew (עברית)</option>
+                <option value="hi">Hindi (हिन्दी)</option>
+                <option value="hu">Hungarian (magyar)</option>
+                <option value="is">Icelandic (íslenska)</option>
+                <option value="id">Indonesian (Indonesia)</option>
+                <option value="it">Italian (italiano)</option>
+                <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                <option value="km">Khmer (ខ្មែរ)</option>
+                <option value="ko">Korean (한국어)</option>
+                <option value="lo">Lao (ລາວ)</option>
+                <option value="lv">Latvian (latviešu)</option>
+                <option value="lt">Lithuanian (lietuvių)</option>
+                <option value="ml">Malayalam (മലയാളം)</option>
+                <option value="mr">Marathi (मराठी)</option>
+                <option value="ne">Nepali (नेपाली)</option>
+                <option value="no">Norwegian (norsk)</option>
+                <option value="or">Odia (ଓଡ଼ିଆ)</option>
+                <option value="ps">Pashto (پښتو)</option>
+                <option value="fa">Persian (فارسی)</option>
+                <option value="pl">Polish (polski)</option>
+                <option value="pt">Portuguese (português)</option>
+                <option value="pa">Punjabi (ਪੰਜਾਬੀ)</option>
+                <option value="ro">Romanian (română)</option>
+                <option value="ru">Russian (русский)</option>
+                <option value="sr">Serbian (српски)</option>
+                <option value="sd">Sindhi (سنڌي)</option>
+                <option value="si">Sinhala (සිංහල)</option>
+                <option value="sl">Slovenian (slovenščina)</option>
+                <option value="sv">Swedish (svenska)</option>
+                <option value="tl">Tagalog (Tagalog)</option>
+                <option value="ta">Tamil (தமிழ்)</option>
+                <option value="te">Telugu (తెలుగు)</option>
+                <option value="th">Thai (ไทย)</option>
+                <option value="bo">Tibetan (བོད་སྐད་)</option>
+                <option value="tr">Turkish (Türkçe)</option>
+                <option value="ur">Urdu (اردو)</option>
+                <option value="ug">Uyghur (ئۇيغۇرچە)</option>
+                <option value="vi">Vietnamese (Tiếng Việt)</option>
+            </select>
+
+          <legend>People</legend>
+          <label for="accounts">From these accounts</label>
+            <input type="text" id="accounts">
+          <label for="toaccounts" >To these accounts</label>
+            <input type="text" id="toaccounts">
+          <label for="mentions">Mentioning these accounts</label>
+          <input type="text" id="mentions">
+          <legend>Places</legend>
+          <label for="places">Near this place</label>
+            <input type="text" id="places">
+            <legend><span>Dates</span></legend>
+    
+              <label>From this date</label>
+              <div class="input-daterange input-group" id="datepicker">
+                <input type="text" class="input-sm form-control input-since" name="since" id="since" />
+                <label for="until" class="t1-label input-group-addon">to</label>
+                <input type="text" class="input-sm form-control input-until" name="until" id="until" />
+              
+            </div>
           <button type="submit">Submit</button>
+          
         </fieldset>
+
       </form>
     </aside>
-    <div class="grid-item grid-item-2">
-            <img class="upper-right" src="img//Twitter All Brand Resources/Twitter Logos/Twitter_Logo_Blue/Twitter_Logo_Blue.png">
-            <div class="upper-left"><p><strong>Listen Now: Trending 🗣️</p></strong><br>@You</div>
-            <p><strong>#impeach</strong></p>
-    </div>
-    <div class="grid-item grid-item-3">
-        <img class="upper-right" src="img//Twitter All Brand Resources/Twitter Logos/Twitter_Logo_Blue/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>Listen Now: News 🗣️</p></strong><br>@You</div>
-        <p><strong>@CNN @CBS @FOX @BBC @PBS</strong></p>
-  </div>
-  <div class="grid-item grid-item-4">
-      <img class="upper-right" src="img//Twitter All Brand Resources/Twitter Logos/Twitter_Logo_Blue/Twitter_Logo_Blue.png">
-      <div class="upper-left"><p><strong>Listen Now: Random Stream 🗣️</p></strong><br>@You</div>
-      <p><strong>#HongKongProtests</strong></p>
 </div>
-    <div class="grid-item grid-item-5">
-        <img class="upper-right" src="img//Twitter All Brand Resources/Twitter Logos/Twitter_Logo_Blue/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>Listen Now: Copypasta of the day 🗣️</p></strong><br>@You</div>
-        <p><strong>Shrek 2 is the greatest film ever made, and here's why. It all started when I joined the Navy, and reached the SEALS within 15 days. I had seen Shrek 1, 2, and 3, but that first sequel - I could NOT stop thinking about while deployed fighting ISIS.</strong></p>
+<div class="container">
+    <div class="item">
+        <div class="playpause">
+          <input type="checkbox" value="" id="playPauseCheckbox1" name="playPauseCheckbox1" />
+          <label class="label" for="playPauseCheckbox1"></label>
+        </div>
+      <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+      <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>If we could hear ourselves interact online, would we change how we Tweet and comment?</strong> 1/7</p>
     </div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox2" name="playPauseCheckbox2" />
+              <label class="label" for="playPauseCheckbox2"></label>
+            </div>
+            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>If the phone and computer are an extension of our bodies, then social media is the extension, or perhaps plummet, of our minds. Ideas we write and share are very different from ideas we speak and hear.
+      
+          Most of us hate the sound of our own voice. I think the same think would happen to our consumption habits if we heard it out loud. </strong>2/7</p></div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox3" name="playPauseCheckbox3" />
+              <label class="label" for="playPauseCheckbox3"></label>
+            </div>
+            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>But perhaps not. What if you had an assistant to read, out loud, the media you consume? Would it change how you feel? Behind every comment, headline, or article is a voice - a person.</strong> 3/7</p></div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox4" name="playPauseCheckbox4" />
+              <label class="label" for="playPauseCheckbox4"></label>
+            </div>
+            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>I believe speech can pivot how our brains have been programmed to live online. We are visual. We are perfectionists. We are self conscious, judgmental, and quick to react.</strong> 4/7</p> </div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox5" name="playPauseCheckbox5" />
+              <label class="label" for="playPauseCheckbox5"></label>
+            </div>
+            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>Rather than *look* inward, I propose we listen in, to ourselves and others. Topics, hashtags, people, issues, celebrations, wins, jokes, memes, and each other. "On the Internet, no one knows you are a dog," has a new riff - "On the Internet, no one knows you are a human."</strong> 5/7</p></div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox6" name="playPauseCheckbox6" />
+              <label class="label" for="playPauseCheckbox6"></label>
+            </div>
+            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>Beyond social re-programming, I suggest a voice agent for Twitter to assist in how we consume our Twitter feeds, or other media.</strong> 6/7</p> </div>
+      <div class="item">
+          <div class="playpause">
+              <input type="checkbox" value="" id="playPauseCheckbox7" name="playPauseCheckbox7" />
+              <label class="label" for="playPauseCheckbox7"></label>
+            </div>
+            <img class="upper-right" alt="twitter-logo" src="img/Twitter_Logo_Blue.png">
+        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
+        <p><strong>Imagine you are a new Twitter user. You've heard of it and understand how it works, but you have never signed up. You are suddenly confronted by the choice of "who do I follow?" "What's worth reading?" "What is trending?" "Who on here is real?"</strong> 7/7</p></div>
 </div>
     <footer id="footer" class="page-footer">
         <small>© Copyright 2020. All rights reserved.</small>
