@@ -3,16 +3,19 @@ DGMD E-20 Assignment 4
 Your name:
 
 1. Provide a link to the first page of your website:
+https://eddierath.github.io/dgmd20_assignment4/
+https://github.com/eddierath/dgmd20_assignment4
 
-My site looks the way I want on (choose one): Mac  PC
+My site looks the way I want on (choose one): Mac
 
-With this browser (choose one): Firefox Chrome 
+With this browser (choose one): Chrome 
 
 
 TRANSITIONS & TRANSFORMS (25% of grade)
 Provide URL(s) and starting line number(s) for HTML and CSS for each item.
 
 2a. Instance #1 of transforms:
+
 
 2b. Instance #2 of transforms:
 
