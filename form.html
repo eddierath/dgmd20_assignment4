@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <link rel="stylesheet" media="screen" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=BepA3S16"></script>
   <title>🎤Create Account📣</title>
 </head>
   <body>
@@ -30,7 +32,7 @@
       </div>
     </main>
     <div class="formwrapper">
-      <aside class="grid-item-1">
+      <aside>
       <h2>Advanced Search. What should we listen for?</h2>
       <p>Get started by selecting the elements you want spoken.</p>
       <p>Need some inspiration? <a href="https://www.twitter.com" target="_blank">Go to Twitter</a> and sign in.</p>
@@ -111,7 +113,8 @@
                 <option value="ug">Uyghur (ئۇيغۇرچە)</option>
                 <option value="vi">Vietnamese (Tiếng Việt)</option>
             </select>
-
+          </fieldset>
+          <fieldset>
           <legend>People</legend>
           <label for="accounts">From these accounts</label>
             <input type="text" id="accounts">
@@ -119,9 +122,13 @@
             <input type="text" id="toaccounts">
           <label for="mentions">Mentioning these accounts</label>
           <input type="text" id="mentions">
+        </fieldset>
+        <fieldset>
           <legend>Places</legend>
           <label for="places">Near this place</label>
             <input type="text" id="places">
+        </fieldset>
+      <fieldset>
             <legend><span>Dates</span></legend>
     
               <label>From this date</label>
@@ -129,75 +136,84 @@
                 <input type="text" class="input-sm form-control input-since" name="since" id="since" />
                 <label for="until" class="t1-label input-group-addon">to</label>
                 <input type="text" class="input-sm form-control input-until" name="until" id="until" />
-              
             </div>
-          <button type="submit">Submit</button>
-          
         </fieldset>
 
       </form>
     </aside>
 </div>
 <div class="container">
+    <div class="item"><h2>Saved Streams</h2></div>
     <div class="item">
         <div class="playpause">
-          <input type="checkbox" value="" id="playPauseCheckbox1" name="playPauseCheckbox1" />
+          <input type="checkbox" value="" id="playPauseCheckbox1" name="playPauseCheckbox1"/>
           <label class="label" for="playPauseCheckbox1"></label>
+          
         </div>
       <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-      <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>If we could hear ourselves interact online, would we change how we Tweet and comment?</strong> 1/7</p>
-    </div>
-      <div class="item">
-          <div class="playpause">
-              <input type="checkbox" value="" id="playPauseCheckbox2" name="playPauseCheckbox2" />
-              <label class="label" for="playPauseCheckbox2"></label>
-            </div>
-            <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>If the phone and computer are an extension of our bodies, then social media is the extension, or perhaps plummet, of our minds. Ideas we write and share are very different from ideas we speak and hear.
-      
-          Most of us hate the sound of our own voice. I think the same think would happen to our consumption habits if we heard it out loud. </strong>2/7</p></div>
+      <div class="upper-left"><p><strong>News</p></strong><br>News from @CNN @CBSNews @FOX</div>
+      <p><strong class='readme'>Malls across U.S. opening early this holiday season so kids with autism can visit Santa in a calmer setting </strong></p>
+  </div>
+    <div class="item">
+        <div class="playpause">
+            <input type="checkbox" value="" id="playPauseCheckbox2" name="playPauseCheckbox2" />
+            <label class="label" for="playPauseCheckbox2"></label>
+          </div>
+          <img class="upper-right" src="img/Twitter_Logo_Blue.png">
+      <div class="upper-left"><p><strong>Trending Hashtags</p></strong><br>@MichelleRagusa</div>
+      <p><strong class='readme'>“No matter how many bad things happen, it’s how you react to them.  Choosing neutrality in the face of conflict is exactly how the oppressors of this world hurt people.  Your value isn’t in the way the world treats you, it’s how you treat the world”. 
+        @amndasuthwrth
+         #MassWomen</strong></p></div>
       <div class="item">
           <div class="playpause">
               <input type="checkbox" value="" id="playPauseCheckbox3" name="playPauseCheckbox3" />
               <label class="label" for="playPauseCheckbox3"></label>
             </div>
             <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>But perhaps not. What if you had an assistant to read, out loud, the media you consume? Would it change how you feel? Behind every comment, headline, or article is a voice - a person.</strong> 3/7</p></div>
+        <div class="upper-left"><p><strong>Containing: YouTube</p></strong><br>@TommyMcMommy</div>
+        <p><strong class='readme'>Child YouTube backlash is hot.
+
+          But we did it to ourselves. We put all our eggs in one basket and now you see the consequences.
+          
+          People need to learn to code and build better, scalable video sharing sites that won't sellout to late night talk shows.
+          
+          #YouTubeIsOver</strong></p></div>
       <div class="item">
           <div class="playpause">
               <input type="checkbox" value="" id="playPauseCheckbox4" name="playPauseCheckbox4" />
               <label class="label" for="playPauseCheckbox4"></label>
             </div>
             <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>I believe speech can pivot how our brains have been programmed to live online. We are visual. We are perfectionists. We are self conscious, judgmental, and quick to react.</strong> 4/7</p> </div>
+        <div class="upper-left"><p><strong>From: Ed Balls</p></strong><br>@EdBalls</div>
+        <p><strong class='readme'>Ed Balls</strong></p> </div>
       <div class="item">
           <div class="playpause">
               <input type="checkbox" value="" id="playPauseCheckbox5" name="playPauseCheckbox5" />
               <label class="label" for="playPauseCheckbox5"></label>
             </div>
             <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>Rather than *look* inward, I propose we listen in, to ourselves and others. Topics, hashtags, people, issues, celebrations, wins, jokes, memes, and each other. "On the Internet, no one knows you are a dog," has a new riff - "On the Internet, no one knows you are a human."</strong> 5/7</p></div>
+        <div class="upper-left"><p><strong>Brexit, from right now</p></strong><br>@NigelFarage </div>
+        <p><strong class='readme'>Polls are still open until 10pm. Go out and vote Brexit Party!
+        </strong></p></div>
       <div class="item">
           <div class="playpause">
               <input type="checkbox" value="" id="playPauseCheckbox6" name="playPauseCheckbox6" />
               <label class="label" for="playPauseCheckbox6"></label>
             </div>
             <img class="upper-right" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>Beyond social re-programming, I suggest a voice agent for Twitter to assist in how we consume our Twitter feeds, or other media.</strong> 6/7</p> </div>
+        <div class="upper-left"><p><strong>Containing: Trump and Bombing</p></strong><br>@kurteichenwald</div>
+        <p><strong class='readme'>The bombing of the Kurds by Turkey has begun, less than 24 hours after Trump betrayed an ally. 
+
+          Trump couldn't be bothered to discuss this with the DoD. People are dying for his stupidity. And now he is watching television to see what people are saying about him.</strong></p> </div>
       <div class="item">
           <div class="playpause">
               <input type="checkbox" value="" id="playPauseCheckbox7" name="playPauseCheckbox7" />
               <label class="label" for="playPauseCheckbox7"></label>
             </div>
             <img class="upper-right" alt="twitter-logo" src="img/Twitter_Logo_Blue.png">
-        <div class="upper-left"><p><strong>You</p></strong><br>@You</div>
-        <p><strong>Imagine you are a new Twitter user. You've heard of it and understand how it works, but you have never signed up. You are suddenly confronted by the choice of "who do I follow?" "What's worth reading?" "What is trending?" "Who on here is real?"</strong> 7/7</p></div>
+        <div class="upper-left"><p><strong>Animals</p></strong><br>@DaniRuberti</div>
+        <p><strong class='readme'>Someone is putting tiny cowboy hats on pigeons in Las Vegas as animal rescue works to remove them — So so many questions with this one. Why is this happening? How is this happening? How do you get a tiny cowboy hat on a pigeon?</strong></p>
+      </div>
 </div>
     <footer id="footer" class="page-footer">
         <small>© Copyright 2020. All rights reserved.</small>
@@ -218,4 +234,27 @@
           </li>
         </ul>
       </footer>
+      <script>
+          $('.item').click(function() { 
+            if(responsiveVoice.isPlaying()) {
+              responsiveVoice.cancel();
+            }
+            else if ($('input').is(":checked")) {
+              responsiveVoice.speak($(this).find('.readme').text());
+            }
+            else if ($('.item').click()) { 
+              responsiveVoice.pause();
+            }
+            else {
+              responsiveVoice.cancel();
+            }
+          });
+          responsiveVoice.setTextReplacements([
+        {
+            searchvalue: "#",
+            newvalue: "hashtag"
+        }
+    ]);
+          </script>
+      </body>
 </html>

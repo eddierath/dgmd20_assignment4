@@ -36,9 +36,14 @@ flex-direction: row;
   align-content: center;
   }
 /* Flexbox for Twitter Card START*/
+
+
   .item {
+    -webkit-animation: blur 1s;
   font-size: 1.2rem;
+  min-width: 250px;
   max-width: 350px;
+  min-height: 100px;
   margin: 20px 20px 20px 40px;
 	/* Twitter Font guideline */
 	font-family: "HelveticaNeue";
@@ -93,9 +98,38 @@ flex-direction: row;
     transform: scale(1.05);
     background-color: #E1E8ED;
     font-size: 2rem;
+    animation: 
+    colorchange 3s ease infinite alternate, 
+    slowrock 5s linear infinite alternate;
   }
-
-   
+  @keyframes colorchange {
+    0%, 100% {
+      background-color: whitesmoke;
+    }
+    50% {
+      background-color: lightcyan;
+    }
+  }
+  
+  @keyframes slowrock {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(10px, 0);
+    }
+    80% {
+      transform: translate(-10px, 0);
+    }
+    100% {
+      transform: translate(-20px, 0);
+    }
+  }
+  
+  svg {
+    -webkit-filter: drop-shadow(6px 6px 10px rgba(0,0,0,0.9));
+    filter: drop-shadow(6px 6px 10px rgba(0,0,0,0.9));
+  }
   
   .upper-right {
     margin: 0 0 3% 85%;
@@ -183,6 +217,13 @@ button:hover {
     center / cover;
   background-blend-mode: luminosity;
   color: var(--main-white-color);
+
+}
+@-webkit-keyframes blur {
+  0% { -webkit-filter: blur(0px);}
+  25% { -webkit-filter: blur(400px);}
+  50% { -webkit-filter: blur(100px);}
+  100% { -webkit-filter: blur(0px);}
 }
 
 .page-main div {
@@ -212,18 +253,22 @@ button:hover {
 	  padding: 60px;
   }
 
-  /* Grid layout START */
-.formwrapper {
-	background-color: rgb(224, 224, 224);
-  display: flex;
-  align-content: center;
   
-		
+.formwrapper form {
+  margin: 0 50px 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+	background-color: rgb(255, 255, 255);
 }
 fieldset {
+
 	border: none;
   background-color:white;
-  line-height: 0.8rem;
+  line-height: 0.9rem;
 }
 legend {
 	padding-top: 2rem;
